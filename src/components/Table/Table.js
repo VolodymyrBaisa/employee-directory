@@ -1,4 +1,5 @@
 import React from "react";
+import Avatar from "../Avatar/Avatar.js";
 import "./table.scss";
 
 const col = (prop) => {
@@ -21,7 +22,7 @@ export const TableRow = ({ avatar, name, phone, email, dob }) => {
         <div className="t-row-container">
             {col(
                 <>
-                    <img src={avatar} className="avatar" alt="avatar" />
+                    <Avatar avatar={avatar} />
                     <div>{name}</div>
                 </>
             )}

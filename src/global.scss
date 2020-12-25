@@ -12,8 +12,12 @@ html {
     font-family: "Roboto", sans-serif;
 }
 
+body {
+    font-size: 1.6rem;
+}
+
 html,
 body,
 #root {
-    height: calc(100% - 3.18vw);
+    height: calc(100% - 3.3vw);
 }
