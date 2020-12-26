@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./search.scss";
 import SearchSVG from "./search.svg";
+import DataAreaContext from "../../utils/DataAreaContext.js";
 
 function Search() {
+    const context = useContext(DataAreaContext);
     return (
         <>
             <div className="search-container">
@@ -11,6 +13,7 @@ function Search() {
                     type="text"
                     className="search"
                     placeholder="Search"
+                    onChange={(e) => context.handleSearchChange(e)}
                 ></input>
             </div>
         </>
