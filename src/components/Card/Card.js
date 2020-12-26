@@ -16,14 +16,13 @@ function Card() {
                     context.employeeState.filtered.map(
                         ({ login, name, picture, phone, email, dob }) => {
                             const prop = {
-                                login,
                                 avatar: picture.medium,
                                 name: name.first + " " + name.last,
                                 phone,
                                 email,
                                 dob: Utils.formatDate(dob.date),
                             };
-                            return <TableRow {...prop} />;
+                            return <TableRow key={login.uuid} {...prop} />;
                         }
                     )
                 ) : (

@@ -36,7 +36,7 @@ function Body() {
         setEmployeeState({ ...employeeState, filtered: filteredList });
     };
 
-    const handleOnToggle = () => {
+    const handleOnClick = () => {
         if (employeeState.order === "ascend") employeeState.order = "descend";
         else employeeState.order = "ascend";
 
@@ -57,7 +57,7 @@ function Body() {
 
     return (
         <DataAreaContext.Provider
-            value={{ employeeState, handleSearchChange, handleOnToggle }}
+            value={{ employeeState, handleSearchChange, handleOnClick }}
         >
             <div className="body-container">
                 <Search />

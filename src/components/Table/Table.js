@@ -17,13 +17,13 @@ export const TableHeader = () => {
                 <>
                     <div
                         className="t-header-filter"
-                        onClick={(e) => context.handleOnToggle(e)}
+                        onClick={context.handleOnClick}
                     >
                         Employee
                     </div>
                     <div
                         className="t-header-filter"
-                        onClick={(e) => context.handleOnToggle(e)}
+                        onClick={context.handleOnClick}
                     >
                         {context.employeeState.order === "ascend" ? (
                             <img src={ArrowUp} alt="employee filter by name" />
@@ -43,9 +43,9 @@ export const TableHeader = () => {
     );
 };
 
-export const TableRow = ({ login, avatar, name, phone, email, dob }) => {
+export const TableRow = ({ avatar, name, phone, email, dob }) => {
     return (
-        <div key={login.uuid} className="t-row-container">
+        <div className="t-row-container">
             {col(
                 <>
                     <Avatar avatar={avatar} />
