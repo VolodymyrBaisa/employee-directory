@@ -6,7 +6,7 @@
 
 ## GIF of Functionality
 
-![App Function]()
+![App Function](https://github.com/VolodymyrBaisa/employee-directory/blob/master/assets/React-App.gif)
 
 ## Link
 
