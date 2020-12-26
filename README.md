@@ -10,7 +10,7 @@
 
 ## Link
 
--   Github:
+-   Github: https://github.com/VolodymyrBaisa/employee-directory/
 
 ## Directions
 
